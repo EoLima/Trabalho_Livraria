@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.livraria.controller.LivroController">
+    <top>
+        <ToolBar>
+            <Button onAction="#onSalvar" text="Salvar" />
+            <Button onAction="#onExcluir" text="Excluir" />
+         <Button onAction="#onAtualizar" text="Atualizar" />
+        </ToolBar>
+    </top>
+    <center>
+        <TableView fx:id="tabelaLivros" prefHeight="400.0" prefWidth="523.0">
+            <columns>
+                <TableColumn fx:id="colunaId" prefWidth="30" text="ID" />
+                <TableColumn fx:id="colunaTitulo" prefWidth="142.0" text="Título" />
+                <TableColumn fx:id="colunaAutor" prefWidth="174.0" text="Autor" />
+                <TableColumn fx:id="colunaAnoPublicacao" prefWidth="55.0" text="Ano" />
+                <TableColumn fx:id="colunaGenero" prefWidth="122.0" text="Gênero" />
+            </columns>
+        </TableView>
+    </center>
+   <left>
+        <VBox spacing="10" BorderPane.alignment="CENTER">
+            <TextField fx:id="txtTitulo" promptText="Título" />
+            <TextField fx:id="txtAutor" promptText="Autor" />
+            <TextField fx:id="txtAnoPublicacao" promptText="Ano de Publicação" />
+            <TextField fx:id="txtGenero" promptText="Gênero" />
+        </VBox>
+   </left>
+</BorderPane>
