@@ -17,10 +17,10 @@ Nada mais é do que um criação de uma api em java, para aprender os princípio
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
 - ✔️ Java
-- JavaFX
-- JPA
-- Hibernate
-- PostgresSQL
+- ✔️ JavaFX
+- ✔️ JPA
+- ✔️ Hibernate
+- ✔️ PostgresSQL
 
 ### Contate-me
 
